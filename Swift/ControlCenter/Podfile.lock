@@ -1,0 +1,16 @@
+PODS:
+  - GridLayout (0.2.6)
+
+DEPENDENCIES:
+  - GridLayout
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GridLayout
+
+SPEC CHECKSUMS:
+  GridLayout: ceca008dc47e27e48612adb7007e53b011894d08
+
+PODFILE CHECKSUM: bb7c961b3a81443717fbaf487383111d5141003d
+
+COCOAPODS: 1.5.3
