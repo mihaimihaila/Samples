@@ -28,63 +28,23 @@ class ViewController: UIViewController {
     
     func buildControlCenter() -> UIView {
         var items = [GridItem]()
-        items.append(GridItem(buildPanel(),
-                              position: Position(rowSpan: 2, columnSpan: 2),
-                              margin: 8).stretched())
-        
-        items.append(GridItem(buildButton(),
-                              margin: 12).stretched())
-        items.append(GridItem(buildButton(),
-                              row: 1,
-                              margin: 12).stretched())
-        items.append(GridItem(buildButton(),
-                              column: 1,
-                              margin: 12).stretched())
-        items.append(GridItem(buildButton(),
-                              row: 1,
-                              column: 1,
-                              margin: 12).stretched())
-        items.append(GridItem(buildButton(),
-                              row: 2,
-                              margin: 12).stretched())
-        items.append(GridItem(buildButton(),
-                              row: 2,
-                              column: 1,
-                              margin: 12).stretched())
-        items.append(GridItem(buildButton(),
-                              position: Position(row: 3, columnSpan: 2),
-                              margin: 12).stretched())
-        items.append(GridItem(buildButton(),
-                              row: 4,
-                              margin: 12).stretched())
-        items.append(GridItem(buildButton(),
-                              row: 4,
-                              column: 1,
-                              margin: 12).stretched())
-        items.append(GridItem(buildButton(),
-                              row: 5,
-                              margin: 12).stretched())
-        items.append(GridItem(buildButton(),
-                              row: 5,
-                              column: 1,
-                              margin: 12).stretched())
-        items.append(GridItem(buildPanel(),
-                              position: Position(column: 2, rowSpan: 2, columnSpan: 2),
-                              margin: 8).stretched())
-        items.append(GridItem(buildButton(),
-                              position: Position(row: 2, column: 2, rowSpan: 2),
-                              margin: 8).stretched())
-        items.append(GridItem(buildButton(),
-                              position: Position(row: 2, column: 3, rowSpan: 2, columnSpan: 2),
-                              margin: 8).stretched())
-        items.append(GridItem(buildButton(),
-                              row: 4,
-                              column: 2,
-                              margin: 8).stretched())
-        items.append(GridItem(buildButton(),
-                              row: 4,
-                              column: 3,
-                              margin: 8).stretched())
+        items.append(GridItem(buildPanel(), position: Position(rowSpan: 2, columnSpan: 2), margin: 8).stretched())
+        items.append(GridItem(buildButton(), margin: 12).stretched())
+        items.append(GridItem(buildButton(), row: 1, margin: 12).stretched())
+        items.append(GridItem(buildButton(), column: 1, margin: 12).stretched())
+        items.append(GridItem(buildButton(), row: 1, column: 1, margin: 12).stretched())
+        items.append(GridItem(buildButton(), row: 2, margin: 12).stretched())
+        items.append(GridItem(buildButton(), row: 2, column: 1, margin: 12).stretched())
+        items.append(GridItem(buildButton(), position: Position(row: 3, columnSpan: 2), margin: 12).stretched())
+        items.append(GridItem(buildButton(), row: 4, margin: 12).stretched())
+        items.append(GridItem(buildButton(), row: 4, column: 1, margin: 12).stretched())
+        items.append(GridItem(buildButton(), row: 5, margin: 12).stretched())
+        items.append(GridItem(buildButton(), row: 5, column: 1, margin: 12).stretched())
+        items.append(GridItem(buildPanel(), position: Position(column: 2, rowSpan: 2, columnSpan: 2), margin: 8).stretched())
+        items.append(GridItem(buildButton(), position: Position(row: 2, column: 2, rowSpan: 2), margin: 8).stretched())
+        items.append(GridItem(buildButton(), position: Position(row: 2, column: 3, rowSpan: 2, columnSpan: 2), margin: 8).stretched())
+        items.append(GridItem(buildButton(), row: 4, column: 2, margin: 8).stretched())
+        items.append(GridItem(buildButton(), row: 4, column: 3, margin: 8).stretched())
 
         return UIView.gridLayoutView(items: items,
                                      rows: [.fill, .fill, .fill, .fill, .fill, .fill],
